@@ -5,6 +5,13 @@ terraform {
       version = "3.16.0"
     }
   }
+
+  cloud {
+    organization = "tbaraki"
+    workspaces {
+      name = "IaC-tbarakidotnet"
+    }
+  }
 }
 
 provider "azurerm" {
