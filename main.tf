@@ -23,14 +23,14 @@ provider "azurerm" {
 
 resource "azurerm_static_site" "tbarakidotnet" {
   name                = "tbarakidotnet"
-  resource_group_name = "RG-tbarakidotnet"
-  location            = "central US"
-  sku_tier            = "Free"
+  resource_group_name = var.resource_group_name
+  location            = var.location
+  sku_tier            = var.sku_tier
 }
 
 resource "azurerm_static_site" "tbarakidotnet-resume" {
   name                = "tbarakidotnet-resume"
-  resource_group_name = "RG-tbarakidotnet"
-  location            = "central US"
-  sku_tier            = "Free"
+  resource_group_name = var.resource_group_name
+  location            = var.location
+  sku_tier            = var.sku_tier
 }
