@@ -6,11 +6,11 @@ terraform {
     }
   }
 
-  cloud {
-    organization = "tbaraki"
-    workspaces {
-      name = "IaC-tbarakidotnet"
-    }
+  backend "azurerm" {
+    resource_group_name   = "RG-tbarakidotnet"
+    storage_account_name  = "tfstatetbarakidotnet"
+    container_name        = "tfstate"
+    key                   = "terraform.tfstate"
   }
 }
 
