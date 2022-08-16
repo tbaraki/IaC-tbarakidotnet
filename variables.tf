@@ -1,24 +1,19 @@
 variable "resource_group_name" {
-  type    = string
-  default = "RG-tbarakidotnet"
+  type = string
 }
 
 variable "location" {
-  type    = string
-  default = "Central US"
+  type = string
 }
 
 variable "sku_tier" {
-  type    = string
-  default = "Free"
+  type = string
 }
 
 variable "tbarakidotnet_zone_id" {
-  type    = string
-  default = "83faeb416715ceadd9eda9feb9679915"
+  type = string
 }
 
 variable "cf_acc_id" {
-  type    = string
-  default = "cf730f668070aecc1ad6e97e9c7ac9e3"
+  type = string
 }
